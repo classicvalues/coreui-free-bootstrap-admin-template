@@ -2,12 +2,12 @@
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI Boostrap Admin Template (v4.1.1): colors.js
+ * CoreUI Boostrap Admin Template (v4.2.2): colors.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
 
-document.querySelectorAll('.theme-color').forEach(element => {
+for (const element of document.querySelectorAll('.theme-color')) {
   const color = getComputedStyle(element, null).getPropertyValue('background-color')
   const table = document.createElement('table')
   table.classList.add('w-100')
@@ -24,4 +24,4 @@ document.querySelectorAll('.theme-color').forEach(element => {
       </table>
     `
   element.parentNode.append(table)
-})
+}
